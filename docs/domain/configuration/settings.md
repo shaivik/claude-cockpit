@@ -18,7 +18,7 @@ Precedence (low → high): managed settings ([page](managed-settings.md)) overri
 
 | Variable | Required | Default | Purpose | Defined in |
 |---|---|---|---|---|
-| `OTEL_RESOURCE_ATTRIBUTES` | No | none | `developer.email=…,team.id=ops-tech` on exported telemetry | `settings.json:env` |
+| `OTEL_RESOURCE_ATTRIBUTES` | No | none | `developer.email=…,team.id=++` on exported telemetry | `settings.json:env` |
 
 ## Default values
 

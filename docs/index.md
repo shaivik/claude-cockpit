@@ -25,7 +25,7 @@ User-level configuration, custom skills, plugins and runtime state for Claude Co
   - Directory usage: [Directory reference](domain/business-logic/directory-reference.md)
   - Behaviour: [Skills system](domain/business-logic/skills-system.md) · [Plugins and marketplaces](domain/business-logic/plugins.md) · [Sessions, projects and memory](domain/business-logic/sessions-and-memory.md) · [File history and rewind](domain/business-logic/file-history.md) · [Hooks](domain/business-logic/hooks.md)
   - Configuration: [settings.json](domain/configuration/settings.md) · [Managed settings and policy](domain/configuration/managed-settings.md) · [CLAUDE.md](domain/configuration/claude-md.md)
-  - Skills catalogue: [Skills overview](domain/workers/overview.md) · [Per-skill pages](domain/workers/files/skills-catalogue.md)
+  - Skills catalogue: [Skills overview](domain/skills/overview.md) · [Per-skill pages](domain/skills/files/skills-catalogue.md)
   - Events: [Kafka — not applicable](domain/kafka/not-applicable.md)
 - **Security** — [Authentication](security/authentication.md) · [Authorization](security/authorization.md)
 - **CI/CD** — [CI](ci-cd/ci.md) · [CD](ci-cd/cd.md)

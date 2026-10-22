@@ -22,7 +22,7 @@ frontmatter `sources:` lists the repo files it was derived from.
 - [File Formats and Naming Patterns](schema/schema.md): Formats, naming regexes and key fields of every file family in ~/.claude (this directory has no database).
 
 ## Domain
-- [Skills Catalogue](domain/workers/files/skills-catalogue.md): Per-skill table of every custom and synced skill, its trigger, entry script and external systems.
+- [Skills Catalogue](domain/skills/files/skills-catalogue.md): Per-skill table of every custom and synced skill, its trigger, entry script and external systems.
 
 ## Domain / Business Logic
 - [Directory Reference](domain/business-logic/directory-reference.md): Per-folder and per-file usage guide for every entry in ~/.claude, with who writes it and whether it is safe to delete.
@@ -40,8 +40,8 @@ frontmatter `sources:` lists the repo files it was derived from.
 ## Domain / Kafka
 - [Kafka and Events](domain/kafka/not-applicable.md): Confirms there are no Kafka topics or message brokers in ~/.claude.
 
-## Domain / Workers
-- [Workers (Skills) Overview](domain/workers/overview.md): There are no background workers; skills are the closest analogue and run on demand.
+## Domain / Skills
+- [Skills Overview](domain/skills/overview.md): Skills are the closest analogue and run on demand.
 
 ## Security
 - [Authentication](security/authentication.md): How Claude Code authenticates the account, IDE connections, sessions and MCP servers, and where credentials sit on disk.

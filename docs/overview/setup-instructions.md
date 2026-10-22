@@ -38,7 +38,7 @@ Not applicable — not a Git repository. Back up `CLAUDE.md`, `settings.json`, `
 |---|---|---|---|---|
 | `OTEL_RESOURCE_ATTRIBUTES` | No | none | Tags telemetry with developer email and `team.id` | `settings.json` `env` |
 
-Skills have their own variables/config; see [skills catalogue](../domain/workers/files/skills-catalogue.md).
+Skills have their own variables/config; see [skills catalogue](../domain/skills/files/skills-catalogue.md).
 
 ## Database Setup
 
@@ -52,10 +52,6 @@ GitHub (plugin marketplace), Anthropic API, Grafana Cloud OTLP, and per-skill sy
 
 Run `claude` in any project, or use the VS Code extension. Global files load automatically.
 
-## Running Background Workers
-
-Not applicable. See [skills](../domain/workers/overview.md) for the closest equivalent.
-
 ## Running Tests
 
 Only `skills/security-audit/validate-*.test.cjs` ship tests. See [testing](../guidelines/testing.md).
@@ -64,8 +60,6 @@ Only `skills/security-audit/validate-*.test.cjs` ship tests. See [testing](../gu
 
 | Symptom | Check |
 |---|---|
-| Hook errors on every event | `~/.config/iterm2/cc-status` missing or not executable |
-| `/graphify` not found | `skills/graphify/` is absent; `CLAUDE.md` still references it |
 | Skill script `no such file` | Use the absolute `~/.claude/skills/<name>` path; `$SKILL_DIR` is a placeholder |
 | MCP tools unavailable | Authenticate servers listed in `mcp-needs-auth-cache.json` via `/mcp` |
 

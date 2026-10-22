@@ -1,6 +1,6 @@
 ---
-title: Workers (Skills) Overview
-summary: There are no background workers; skills are the closest analogue and run on demand.
+title: Skills Overview
+summary: Skills are the closest analogue and run on demand.
 sources:
   - skills/
 status: generated
@@ -8,9 +8,9 @@ last_reviewed: 2026-10-22
 owner: shivam.singh
 ---
 
-# Workers Overview
+# Skills Overview
 
-No background workers or schedulers live here. Skills run on demand inside a session; per-skill detail is in the [skills catalogue](files/skills-catalogue.md).
+Skills run on demand inside a session; per-skill detail is in the [skills catalogue](files/skills-catalogue.md).
 
 ## Dependencies
 

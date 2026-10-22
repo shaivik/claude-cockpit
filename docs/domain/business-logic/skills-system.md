@@ -18,16 +18,16 @@ A skill is a folder that packages a repeatable workflow. Claude Code lists each 
 ## Business Rules
 
 - Folder pattern: `skills/<kebab-name>/` with required `SKILL.md` (YAML frontmatter `name`, `description`).
-- Optional files: `instructions.md` (step-by-step), `references/`, `scripts/`, config (`queries.yaml`), notes.
+- Optional files/folders: `instructions.md` (step-by-step), `references/`, `scripts/`, config (`queries.yaml`), `examples/`, `README.md` .
 - `description` doubles as the trigger text; write it with explicit "Trigger when…" phrasing.
 - `$SKILL_DIR` in instructions → `~/.claude/skills/<name>` (substitute before running `uv run $SKILL_DIR/...`).
-- Script layers: CLI entry (`scripts/<name>.py`), private helpers (`scripts/_*.py`), shared infra (`../../shared/`, not currently present).
+- Script layers: CLI entry (`scripts/<name>.py`), private helpers (`scripts/_*.py`)).
 - `skills/synced/<org>_<acct>/` is server-managed; do not hand-edit.
 
 ## Workflow
 
 1. User types `/skill-name` or a matching request.
-2. Claude reads `SKILL.md`, then `instructions.md`.
+2. Claude reads `SKILL.md`, then `instructions.md` if present.
 3. Runs the CLI script, interprets JSON output, produces report.
 
 ## State Transitions
@@ -36,7 +36,6 @@ Not applicable.
 
 ## Validations
 
-`skill-creator` (synced) has `quick_validate.py`. The empty `anatomy/` folder noted in README no longer exists.
 
 ## Side Effects
 
@@ -44,11 +43,9 @@ Scripts may call external systems (Prometheus, Postgres, SSH). Check each skill 
 
 ## Failure Handling
 
-`CLAUDE.md` references `/graphify` but `skills/graphify/` is missing; the invocation will fail until reinstalled.
+## Related APIs / Models / Skills
 
-## Related APIs / Models / Workers
-
-- [Skills catalogue](../workers/files/skills-catalogue.md)
+- [Skills catalogue](../skills/files/skills-catalogue.md)
 
 ## Related Documentation
 

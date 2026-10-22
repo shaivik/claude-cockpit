@@ -35,7 +35,6 @@ flowchart TD
 ## Internal components
 
 - **Skill layering** (from [CLAUDE.md](../domain/configuration/claude-md.md)): CLI entry `scripts/<name>.py` → private helpers `scripts/_*.py` → shared infra `../../shared/` (referenced; not present at the moment).
-- **Workers / Controllers / Repositories / Event handlers**: not applicable.
 
 ## Important dependencies
 

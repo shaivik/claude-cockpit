@@ -18,4 +18,3 @@ owner: shivam.singh
 | Skills | https://docs.claude.com/en/docs/claude-code/skills |
 | Plugins marketplace | https://github.com/anthropics/claude-plugins-official |
 | Existing README | [../../README.md](../../README.md) |
-| docs-generator skill | `skills/docs-generator/SKILL.md` |

@@ -18,7 +18,6 @@ owner: shivam.singh
 
 | Section | Effect |
 |---|---|
-| graphify | `/graphify` must invoke the `graphify` skill first. **The skill folder is currently missing.** |
 | Skill scripts (`$SKILL_DIR`) | Explains placeholder substitution and the CLI / `_*.py` helpers / shared infra layering ([skills system](../business-logic/skills-system.md)) |
 
 ## Guidance
